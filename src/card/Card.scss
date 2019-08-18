@@ -1,0 +1,40 @@
+.card {
+  -moz-perspective: 2000px;
+  perspective: 2000px;
+  position: relative;
+
+  &__side {
+    background-color: red;
+    color: white;
+    width: 400px;
+    height: 250px;
+    transition: all 2s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+
+    &--front {
+      background-color: orange;
+    }
+    &--back {
+      background-color: plum;
+      transform: rotateY(180deg);
+    }
+  }
+  /* &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+  &:hover &__side--back {
+    transform: rotateY(0);
+  } */
+}
+.rotate-180 {
+  transform: rotateY(-180deg);
+}
+.rotate180 {
+  transform: rotateY(180deg);
+}
+.rotate0 {
+  transform: rotateY(0);
+}
