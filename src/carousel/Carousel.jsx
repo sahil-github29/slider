@@ -8,7 +8,6 @@ import img5 from "../sass/assests/img/05.jpeg";
 import img6 from "../sass/assests/img/06.jpeg";
 import img7 from "../sass/assests/img/07.jpeg";
 import img8 from "../sass/assests/img/08.jpeg";
-import Card from "../card/Card";
 
 class Carousel extends Component {
   state = {
@@ -92,7 +91,6 @@ class Carousel extends Component {
           <div className="carousel__slide" ref={this.carouselSlide}>
             <img src={img8} alt="img8" id="lastClone" />
             <img src={img1} alt="img1" />
-            <Card />
             <img src={img2} alt="img2" />
             <img src={img3} alt="img3" />
             <img src={img4} alt="img4" />
