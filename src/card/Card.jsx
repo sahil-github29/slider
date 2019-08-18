@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./Card.scss";
+import img3 from "../sass/assests/img/03.jpeg";
+import img6 from "../sass/assests/img/06.jpeg";
 
 class MleExceptions extends Component {
   state = { backClass: "", frontClass: "" };
@@ -16,10 +18,10 @@ class MleExceptions extends Component {
     return (
       <div className="card">
         <div className={frontClass} onClick={() => this.changeSide("front")}>
-          front
+          <img src={img3} alt="img3" />
         </div>
         <div className={backClass} onClick={() => this.changeSide("back")}>
-          back
+          <img src={img6} alt="img6" />
         </div>
       </div>
     );

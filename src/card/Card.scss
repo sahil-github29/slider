@@ -6,8 +6,8 @@
   &__side {
     background-color: red;
     color: white;
-    width: 400px;
-    height: 250px;
+    height: 150px;
+    max-width: 200px;
     transition: all 2s;
     position: absolute;
     top: 0;
@@ -21,6 +21,10 @@
       background-color: plum;
       transform: rotateY(180deg);
     }
+    & > img {
+      height: 150px;
+      max-width: 200px;
+    }
   }
   /* &:hover &__side--front {
     transform: rotateY(-180deg);
@@ -29,6 +33,7 @@
     transform: rotateY(0);
   } */
 }
+
 .rotate-180 {
   transform: rotateY(-180deg);
 }
